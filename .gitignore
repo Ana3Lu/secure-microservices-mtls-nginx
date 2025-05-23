@@ -1,0 +1,14 @@
+# Ignorar certificados y claves privadas
+Certs/
+**/*.pem
+**/*.key
+**/*.p12
+**/*.jks
+
+# Archivos generados
+*.log
+*.class
+build/
+target/
+out/
+.gradle/

@@ -22,7 +22,7 @@ public class WebClientConfig {
     public WebClient webClient() throws Exception {
         // Cargar el keystore del cliente
         KeyStore keyStore = KeyStore.getInstance("PKCS12");
-        try (FileInputStream keyStoreFis = new FileInputStream("C:/Users/analu/Downloads/ProyectoFinalPatrones/Certs/client-keystore.p12")) {
+        try (FileInputStream keyStoreFis = new FileInputStream("C:/Users/analu/Downloads/ProyectoFinalPatrones/springboot-mtls-nginx-demo/Certs/client-keystore.p12")) {
             keyStore.load(keyStoreFis, "Client.23".toCharArray());
         }
 
